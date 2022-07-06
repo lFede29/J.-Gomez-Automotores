@@ -7,28 +7,32 @@ html
 {
     min-height: 100%;
     position: relative;
+    
 
 }
 body
 {
     min-height: 100vh;
-    width: 100%;
+    width: 1fr;
     font-family: 'Noto Sans', sans-serif;
-    background-color: #edede3;
+    background-image: url(./imagenes/background-img.jpg);
   }
 
 main
 {
-    min-height: 80vh;
+    min-height: 100vh;
+    
 }
 
 footer
 {
-    position: absolute;
+    
     left:0px;
     bottom:0px;
     height: 65px;
     width:100%;
+     background-color: black;
+     color: white;
     
 }
      
@@ -130,6 +134,7 @@ h1{
 .imagen-about-us
 {
     width: 100%;
+    
 }
 
 .texto-principal
@@ -152,12 +157,6 @@ li{
 .multimarcas img
 {
    display: inline-block;
-    width: 180px;
-    padding-top: 50px;
-    margin: auto;
-    
-     
-   
 }
 
 .fotos-main
@@ -202,4 +201,114 @@ li{
 {
     background-image: url(./imagenes/background-img.jpg);
     background-size: contain;
+}
+
+.galeria__contenedor
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+
+
+.img__galeria
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.img__galeria:hover 
+{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+@media screen 
+{
+ min-width: 600px; 
+
+ .wide
+{
+    grid-column: span 2;
+    grid-row: span 2;
+    
+}
+
+.tall
+{
+    grid-row: span 2;
+}
+}
+
+.style
+{
+    background-image: url(./imagenes/galeria-auto-1.jpg);
+    background-image: url(./imagenes/galeria-auto-2.jpg);
+    background-image: url(./imagenes/galeria-auto-3.jpg);
+    background-image: url(./imagenes/galeria-auto-4.jpg);
+    background-image: url(./imagenes/galeria-auto-5.jpg);
+    background-image: url(./imagenes/galeria-auto-6.jpg);
+    background-image: url(./imagenes/galeria-auto-7.jpg);
+    background-image: url(./imagenes/galeria-auto-8.jpg);
+    background-image: url(./imagenes/galeria-auto-9.jpg);
+    background-image: url(./imagenes/galeria-auto-10.jpg);
+    background-image: url(./imagenes/galeria-auto-11.jpg);
+    background-image: url(./imagenes/galeria-auto-12.jpg);
+    background-image: url(./imagenes/galeria-auto-13.jpg);
+}
+
+.tamaño__main
+{
+    color: white ;
+    padding: 2%;
+}
+
+.texto__ubicacion
+{
+    color: white;
+    padding: 2%;
+}
+
+.color-letras
+{
+    color: white;
+}
+
+.multimarcas__contenedor img
+{
+    width: 200px;
+}
+
+.multimarcas__contenedor
+{
+    text-align: center;
+    height: 200px;   
+}
+.multimarca
+{
+    padding: 15px 10px 5px 10px;
+    margin: 2px;
+    display:inline-block;
+    width: 200px;
+    text-align: center;
+  
+}
+
+.modelo-auto
+{
+    color: white;
+   position: absolute;
+   bottom: 10px;
+   left: 10px;
+   
 }
