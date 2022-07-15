@@ -6,7 +6,6 @@
 html
 {
     min-height: 100%;
-    position: absolute;
     min-width: 100%;
     box-sizing: none;
 
@@ -341,4 +340,11 @@ li{
 
 .card{
     display: inline-block;
+    justify-content:end;
+    
+}
+
+.card-text
+{
+    color: black;
 }
