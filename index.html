@@ -7,6 +7,10 @@
     <title>J.Gomez Automotores</title>
 	
 	<!-- CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./style.css">
 
 </head>
@@ -22,70 +26,87 @@
 				<li><a href="./paginas/ubicacion.html" class="menu-desplegable">Ubicacion</a></li>
 			</ul>
 		</nav>
-		
-		<!-- redes sociales -->
 
-	
 	</header>
 	<main>
-		
-		<section>
-			<!-- FOTO DE LOCAL -->
-			<div>
-				<img src="./imagenes/foto-local.jpg" alt="foto local" class="imagen-about-us">
+		<!-- carousel -->
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./imagenes/foto-carrousel-1.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="./imagenes/foto-carrousel-2.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="./imagenes/foto-carrousel-3.jpg" class="d-block w-100" alt="...">
+				</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+				</button>
 			</div>
-		</section>
-		
-		<section class="multimarcas__contenedor">
-			
-			<div class="multimarca__logos">
+	
+		<section class="marcas__index">
+			<div class="rows">
 				<img src="./imagenes/chevrolet-logo.png" alt="logo chevrolet">
 			</div>
-			<div class="multimarca__logos">
+			<div class="rows">
 				<img src="./imagenes/fiat-logo.png" alt="logo fiat">
 			</div>
-			<div class="multimarca__logos">
+			<div class="rows">
 				<img src="./imagenes/ford-logo.png" alt="logo ford">
 			</div>
-			<div class="multimarca__logos">
-				<img src="./imagenes/kia-logo.png" alt="logo kia">
-			</div>
-			<div class="multimarca__logos">
+			<div class="rows">
 				<img src="./imagenes/toyota-logo.png" alt="logo toyota">
 			</div>
-			<div class="multimarca__logos">
+			<div class="rows">
 				<img src="./imagenes/volkswagen-logo.png" alt="logo volkswagen">
 			</div>
-
-		</section>	
+			<div class="rows">
+				<img src="./imagenes/kia-logo.png" alt="logo kia">
+			</div>
+		</section>
 		<section class="fotos-main color-letras">
 			<div class="fotos__informacion color-letras">
-				<img src="./imagenes/icono-financiacion-globalcaja.png" alt="foto financiacion" id="financiacion">
+				<img src="./imagenes/icono-financiacion-globalcaja2.png" alt="foto financiacion" id="financiacion">
 				<h2>Financiacion</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore, maiores impedit eaque explicabo recusandae natus earum! Placeat, explicabo nulla?</p>
+				<p>Ahora podes elegir un plan de financiacion de 12, 24, 36 y hasta 48 cuotas ¡FIJAS Y EN PESOS!</p>
 			</div>	
 			<div class="fotos__informacion color-letras">
 				<img src="./imagenes/cotizacion-logo.jpg" alt="foto cotizacion" id="cotizacion">			
 				<h2>Solicita una cotizacion</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo rerum veniam qui saepe, porro animi?</p>
+				<p>Lleva tu unidad usada a nuestro consecionario mas cercano para que podamos cotizarla</p>
 			</div>
 			<div class="fotos__informacion color-letras">	
 				<img src="./imagenes/sucursal-logo.png" alt="foto sucursales" id="sucursales">	
 				<h2>Sucursales</h2>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum in quidem perspiciatis harum magnam maxime consectetur ipsam eos! Sint, tempore?</p>
+				<p>Actualmente contamos con sucursales en las ciudades de Laboulaye (Cordoba), Jovita (Cordoba) y Rufino (Santa Fe)</p>
 			</div>
 		</section>
 		
 		
 	</main>
+	<hr>	
 	<footer>
-		<hr>
-		<h2 class="color-nuestras-redes">Nuestras redes sociales</h2>
-		<ul class="redes-footer">
-			<li><a href="https:/instagram.com" target="_blank"><img src="./imagenes/instagram-logo-.png" width="30px" alt="instagram"></a></li>
-			<li><a href="https:/web.whatsapp.com" target="_blank"><img src="./imagenes/whatsapp-logo.png" width="30px" alt="whatsapp"></a></li>
-		</ul>
-	</footer>
-
+			<section class="container-footer">
+			<div class="box-footer">
+				<h3 class="color-nuestras-redes">Nuestras redes sociales</h3>
+			</div>
+			<div>
+				<ul class="box-footer">
+					<li><a href="https:/instagram.com" target="_blank"><img src="./imagenes/instagram-logo.jpg"  alt="instagram"></a></li>
+					<li><a href="https:/web.whatsapp.com" target="_blank"><img src="./imagenes/whatsapp-logo2.png"  alt="whatsapp"></a></li>
+				</ul>
+			</div>
+				
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>
