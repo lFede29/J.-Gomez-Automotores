@@ -1,0 +1,73 @@
+#background-imagen
+{
+    background-image: url(../imagenes/background-img2.jpg);
+    background-size: cover;
+}
+.galeria__contenedor
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+.modelo-auto
+{
+    color: white;
+   position: absolute;
+   bottom: 0px;
+   left: 10px;
+}
+.img__galeria
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.img__galeria:hover 
+{
+    filter: opacity(0.9);
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+
+@media screen and (min-width:768px)
+{
+.wide
+{
+
+    grid-column: span 2;
+    grid-row: span 2;
+}
+    
+
+
+.tall
+{
+    grid-row: span 2;
+}
+
+.tamaño__main
+{
+    color: white ;
+    padding: 2%;
+}
+
+.texto__ubicacion
+{
+    color: white;
+    padding: 2%;
+}
+}
+.rows img
+{
+    width: 100%;
+}

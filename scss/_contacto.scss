@@ -1,0 +1,45 @@
+.contacto
+{
+    width: 40%;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: black;
+    padding-left: 30px;
+}
+
+.input
+{
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.formulario
+{
+    line-height: 3.125rem;
+    color: white;
+}
+.formulario div
+{
+    padding: 11px;
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .contacto
+    {
+        width: 77%;
+    }
+}
+.boton-enviar
+{
+   padding: 5px;
+   width: 100px;
+}

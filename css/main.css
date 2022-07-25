@@ -1,0 +1,251 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box; }
+
+html {
+  min-height: 100%;
+  min-width: 100%;
+  max-width: 100%; }
+
+body {
+  font-family: Arial,Sans-Serif;
+  font-size: 16px;
+  background-image: url(../imagenes/background-img2.jpg);
+  background-size: cover;
+  max-width: 100%; }
+
+main {
+  min-height: 100vh; }
+
+footer {
+  padding: 10px 10px; }
+
+p {
+  margin-bottom: 0px; }
+
+.color-nuestras-redes {
+  color: black; }
+
+.container-footer {
+  position: relative;
+  display: flex; }
+
+.box-footer {
+  position: relative;
+  color: white; }
+
+.box-footer img {
+  padding-right: 10px;
+  width: 30px; }
+
+.navegacion ul a {
+  color: white;
+  text-decoration: none;
+  font-size: medium;
+  padding: 14px 16px;
+  text-align: center; }
+
+.navegacion ul {
+  list-style: none;
+  background-color: black;
+  display: flex;
+  padding: 20px;
+  height: 15px; }
+
+li {
+  display: inline; }
+
+*::before,
+*::after {
+  box-sizing: 0px; }
+
+dl, ol, ul {
+  margin-bottom: 0px; }
+
+.fotos-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  text-align: center; }
+
+.fotos__informacion {
+  width: 15.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  color: black; }
+
+.fotos__informacion:hover {
+  transform: scale(1.1); }
+
+@media screen and (max-width: 700px) {
+  .fotos-main {
+    display: block; }
+  .fotos__informacion {
+    margin-left: auto;
+    margin-right: auto; }
+  .multimarcas__contenedor {
+    display: none; }
+  .navegacion ul {
+    flex-direction: column;
+    background-color: black;
+    height: fit-content;
+    padding: 10px; }
+  .navegacion ul li {
+    margin: 10px 10px;
+    padding: 5px;
+    background: rgba(0, 217, 255, 0.774);
+    width: fit-content; } }
+
+#financiacion {
+  width: 200px; }
+
+#sucursales {
+  width: 200px; }
+
+#cotizacion {
+  width: 200px; }
+
+.marcas__index {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 15% 15% 15% 15% 15% 15%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; }
+
+.contacto {
+  width: 40%;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: black;
+  padding-left: 30px; }
+
+.input {
+  width: 25rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black; }
+
+.formulario {
+  line-height: 3.125rem;
+  color: white; }
+
+.formulario div {
+  padding: 11px; }
+
+@media screen and (max-width: 768px) {
+  .contacto {
+    width: 77%; } }
+
+.boton-enviar {
+  padding: 5px;
+  width: 100px; }
+
+#background-imagen {
+  background-image: url(../imagenes/background-img2.jpg);
+  background-size: cover; }
+
+.galeria__contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense; }
+
+.modelo-auto {
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 10px; }
+
+.img__galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.img__galeria:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
+  transition: 0.2s; }
+
+@media screen and (min-width: 768px) {
+  .wide {
+    grid-column: span 2;
+    grid-row: span 2; }
+  .tall {
+    grid-row: span 2; }
+  .tamaño__main {
+    color: white;
+    padding: 2%; }
+  .texto__ubicacion {
+    color: white;
+    padding: 2%; } }
+
+.rows img {
+  width: 100%; }
+
+.tamaño__main {
+  margin-bottom: 0px;
+  color: black; }
+
+.texto__ubicacion {
+  color: black; }
+
+.contenedor__card {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 30% 30% 30%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; }
+
+.card {
+  width: 70%; }
+
+.card-text {
+  color: black; }
+
+.card-img-top {
+  height: 300px; }
+
+.card-img-top img {
+  width: fit-content; }
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.5s; }
+
+@media screen and (max-width: 700px) {
+  .contenedor__card {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+  .card {
+    width: 100%;
+    margin: 20px; }
+  .tamaño__main {
+    margin: 10px; } }
+
+.card-body {
+  background-color: #3b4141; }
+
+.card-text {
+  color: white; }

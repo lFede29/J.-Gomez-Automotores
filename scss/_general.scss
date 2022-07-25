@@ -1,3 +1,88 @@
-.cabecera{
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+}
+
+html
+{
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+body
+{
+    font-family: Arial,Sans-Serif;
+    font-size: 16px;
+    background-image: url(../imagenes/background-img2.jpg);
+    background-size: cover;
+    max-width: 100%;
+  }
+
+main
+{
+    min-height: 100vh;
+}
+
+footer
+{
+    padding: 10px 10px;
+}
+
+p
+{
+    margin-bottom: 0px;
+}
+.color-nuestras-redes
+{
+    color: black;
+}
+
+.container-footer
+{
+    position: relative;
+    display: flex;
+}
+
+.box-footer
+{
+    position: relative;
+    color: white;
+}
+
+.box-footer img
+{
+    padding-right: 10px;
+    width: 30px;
+}
+
+.navegacion ul a
+{
+    color:white;
+    text-decoration: none;
+    font-size: medium;
+    padding: 14px 16px;
+    text-align: center;
     
+}
+
+.navegacion ul
+{
+    list-style: none;
+    background-color: black;
+    display: flex;
+    padding: 20px;
+    height: 15px;
+}
+li{
+    display: inline;
+}
+*::before,
+*::after {
+  box-sizing: 0px;
+}
+dl, ol, ul
+{
+    margin-bottom: 0px;
 }

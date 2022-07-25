@@ -1,0 +1,72 @@
+.tamaño__main
+{
+    margin-bottom: 0px;
+    color: black;
+}
+.texto__ubicacion
+{
+    color:black;
+}
+
+.contenedor__card
+{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 30% 30%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.card
+{
+    width: 70%;
+}
+.card-text
+{
+    color: black;
+}
+
+.card-img-top
+{
+    height: 300px;
+}
+.card-img-top img
+{
+    width: fit-content;
+}
+.card:hover
+{
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 700px)
+{
+    .contenedor__card
+    {
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card
+    {
+        width: 100%;
+        margin: 20px;
+    }
+   
+    .tamaño__main
+    {
+        margin: 10px;
+    }
+    
+}
+.card-body
+{
+    background-color: #3b4141;
+}
+
+.card-text
+{
+    color: white;
+}
