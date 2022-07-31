@@ -29,13 +29,14 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-}
 
-.img__galeria:hover 
-{
-    filter: opacity(0.9);
-    transform: scale(1.05);
-    transition: 0.2s;
+
+    &img__galeria:hover 
+    {
+        filter: opacity(0.9);
+        transform: scale(1.05);
+        transition: 0.2s;
+    }
 }
 
 

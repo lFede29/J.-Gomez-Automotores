@@ -140,9 +140,8 @@ dl, ol, ul {
 .formulario {
   line-height: 3.125rem;
   color: white; }
-
-.formulario div {
-  padding: 11px; }
+  .formularioformulario div {
+    padding: 11px; }
 
 @media screen and (max-width: 768px) {
   .contacto {
@@ -179,11 +178,10 @@ dl, ol, ul {
   background-position: center;
   background-repeat: no-repeat;
   position: relative; }
-
-.img__galeria:hover {
-  filter: opacity(0.9);
-  transform: scale(1.05);
-  transition: 0.2s; }
+  .img__galeriaimg__galeria:hover {
+    filter: opacity(0.9);
+    transform: scale(1.05);
+    transition: 0.2s; }
 
 @media screen and (min-width: 768px) {
   .wide {
@@ -218,19 +216,15 @@ dl, ol, ul {
 
 .card {
   width: 70%; }
-
-.card-text {
-  color: black; }
-
-.card-img-top {
-  height: 300px; }
-
-.card-img-top img {
-  width: fit-content; }
-
-.card:hover {
-  transform: scale(1.1);
-  transition: 0.5s; }
+  .cardcard-text {
+    color: black; }
+  .cardcard-img-top {
+    height: 300px; }
+  .cardcard-img-top img {
+    width: fit-content; }
+  .cardcard:hover {
+    transform: scale(1.1);
+    transition: 0.5s; }
 
 @media screen and (max-width: 700px) {
   .contenedor__card {

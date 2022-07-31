@@ -20,24 +20,25 @@
 .card
 {
     width: 70%;
-}
-.card-text
+
+&card-text
 {
     color: black;
 }
 
-.card-img-top
+&card-img-top
 {
     height: 300px;
 }
-.card-img-top img
+&card-img-top img
 {
     width: fit-content;
 }
-.card:hover
+&card:hover
 {
     transform: scale(1.10);
     transition: 0.5s;
+}
 }
 
 @media screen and (max-width: 700px)

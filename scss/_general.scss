@@ -70,7 +70,7 @@ p
 .navegacion ul
 {
     list-style: none;
-    background-color: black;
+    background-color: map-get($colores, "variable1");
     display: flex;
     padding: 20px;
     height: 15px;
@@ -86,3 +86,9 @@ dl, ol, ul
 {
     margin-bottom: 0px;
 }
+
+$colores:(
+    "variable1": black,
+    "variable2": white, 
+    "variable3": gray
+);

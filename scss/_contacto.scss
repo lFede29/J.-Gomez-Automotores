@@ -6,7 +6,7 @@
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
-    background-color: black;
+    background-color: map-get($colores, "variable1");
     padding-left: 30px;
 }
 
@@ -17,19 +17,19 @@
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    border-color: black;
+    border-color: map-get($colores, "variable1");
 }
 
 .formulario
 {
     line-height: 3.125rem;
     color: white;
-}
-.formulario div
-{
-    padding: 11px;
-}
 
+    &formulario div
+    {
+        padding: 11px;
+    }
+}
 
 @media screen and (max-width: 768px)
 {
