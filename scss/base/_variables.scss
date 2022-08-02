@@ -1,0 +1,10 @@
+$colores:(
+    "variable1": black,
+    "variable2": white, 
+    "variable3": gray
+);
+
+@mixin size ($width, $height){
+    height: $height;
+    width: $width;
+}

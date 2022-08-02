@@ -1,7 +1,5 @@
 .contacto
-{
-    width: 40%;
-    height: auto;
+{   @include size(40%, auto);
     margin: 80px auto;
     border-radius: 10px;
     padding-top: 30px;
@@ -11,9 +9,8 @@
 }
 
 .input
-{
-    width: 25rem;
-    height: 2.5rem;
+{   
+    @include size(2.5rem, 25rem);
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
@@ -24,7 +21,6 @@
 {
     line-height: 3.125rem;
     color: white;
-
     &formulario div
     {
         padding: 11px;
@@ -43,3 +39,4 @@
    padding: 5px;
    width: 100px;
 }
+
