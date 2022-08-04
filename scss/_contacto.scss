@@ -1,42 +1,40 @@
-.contacto
-{   @include size(40%, auto);
+.contenedor{
+    @include size(40%, auto);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
     margin: 80px auto;
-    border-radius: 10px;
-    padding-top: 30px;
-    padding-bottom: 20px;
     background-color: map-get($colores, "variable1");
-    padding-left: 30px;
-}
-
-.input
-{   
-    @include size(2.5rem, 25rem);
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: map-get($colores, "variable1");
-}
-
-.formulario
-{
-    line-height: 3.125rem;
+    padding: 20px;
     color: white;
-    &formulario div
-    {
-        padding: 11px;
+    border-radius: 10px;
+}
+
+.input{
+    height: 30px;
+}
+    
+.textarea{
+    @include size(300px, 60px);
+}
+
+.boton-enviar{
+    width: 100px;
+}
+
+@media screen and (max-width: 730px) 
+{
+    .contenedor{
+        width: 80%;
     }
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 320px)
 {
-    .contacto
-    {
-        width: 77%;
+    .contenedor{
+        width: 80%;
+    }
+    .textarea{
+        width: 197px;
     }
 }
-.boton-enviar
-{
-   padding: 5px;
-   width: 100px;
-}
-
