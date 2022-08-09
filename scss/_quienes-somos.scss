@@ -41,7 +41,7 @@
 }
 }
 
-@media screen and (max-width: 700px)
+@media screen and (max-width: 768px)
 {
     .contenedor__card
     {
@@ -53,7 +53,7 @@
     .card
     {
         width: 100%;
-        margin: 20px;
+        margin-bottom: 20px;
     }
    
     .tamaño__main
@@ -70,5 +70,12 @@
 .card-text
 {
     color: white;
+}
+
+@media screen and (max-width: 425px)
+{
+    .contenedor__card{
+        width: 80%;
+    }
 }
 

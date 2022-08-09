@@ -79,3 +79,13 @@
     justify-content: center;
     margin-top: 50px;
 }
+
+@media screen and (max-width: 425px)
+{
+    .marcas__index{
+        margin-top: 10px;
+    }
+    .fotos-main{
+        padding-top: 30px;
+    }
+}

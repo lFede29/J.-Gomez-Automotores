@@ -10,8 +10,8 @@ html {
   max-width: 100%; }
 
 body {
-  font-family: Arial,Sans-Serif;
-  font-size: 16px;
+  font-family: 'futura-pt',Arial,Sans-Serif;
+  font-size: 18px;
   background-image: url(../imagenes/background-img2.jpg);
   background-size: cover;
   max-width: 100%; }
@@ -118,6 +118,12 @@ dl, ol, ul {
   align-items: center;
   justify-content: center;
   margin-top: 50px; }
+
+@media screen and (max-width: 425px) {
+  .marcas__index {
+    margin-top: 10px; }
+  .fotos-main {
+    padding-top: 30px; } }
 
 .contenedor {
   height: auto;
@@ -226,7 +232,7 @@ dl, ol, ul {
     transform: scale(1.1);
     transition: 0.5s; }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .contenedor__card {
     display: block;
     width: 50%;
@@ -234,7 +240,7 @@ dl, ol, ul {
     margin-right: auto; }
   .card {
     width: 100%;
-    margin: 20px; }
+    margin-bottom: 20px; }
   .tamaño__main {
     margin: 10px; } }
 
@@ -244,6 +250,19 @@ dl, ol, ul {
 .card-text {
   color: white; }
 
+@media screen and (max-width: 425px) {
+  .contenedor__card {
+    width: 80%; } }
+
 .texto__ubicacion {
   text-align: center;
   padding-top: 30px; }
+
+.mapa__ubicacion {
+  width: 600px;
+  height: 450px; }
+
+@media screen and (max-width: 650px) {
+  .mapa__ubicacion {
+    width: 300px;
+    height: 250px; } }
