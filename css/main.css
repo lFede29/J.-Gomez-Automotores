@@ -44,15 +44,15 @@ p {
   color: white;
   text-decoration: none;
   font-size: medium;
-  padding: 14px 16px;
-  text-align: center; }
+  padding: 14px 16px; }
 
 .navegacion ul {
   list-style: none;
   background-color: black;
   display: flex;
   padding: 20px;
-  height: 15px; }
+  height: 15px;
+  align-items: center; }
 
 li {
   display: inline; }
@@ -63,6 +63,10 @@ li {
 
 dl, ol, ul {
   margin-bottom: 0px; }
+
+@media screen and (max-width: 425px) {
+  .navegacion ul {
+    align-items: flex-start; } }
 
 .fotos-main {
   display: flex;
@@ -119,11 +123,18 @@ dl, ol, ul {
   justify-content: center;
   margin-top: 50px; }
 
+.carousel__cel {
+  display: none; }
+
 @media screen and (max-width: 425px) {
   .marcas__index {
     margin-top: 10px; }
   .fotos-main {
-    padding-top: 30px; } }
+    padding-top: 30px; }
+  .carousel__cel {
+    display: block; }
+  .carousel__desktop {
+    display: none; } }
 
 .contenedor {
   height: auto;
@@ -147,9 +158,16 @@ dl, ol, ul {
 .boton-enviar {
   width: 100px; }
 
+@media screen and (max-width: 768px) {
+  .contenedor {
+    width: 60%; } }
+
 @media screen and (max-width: 730px) {
   .contenedor {
-    width: 80%; } }
+    width: 80%; }
+  .formualrio__h1 {
+    margin-top: 5px;
+    font-size: 38px; } }
 
 @media screen and (max-width: 320px) {
   .contenedor {

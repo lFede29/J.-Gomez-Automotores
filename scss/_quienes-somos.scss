@@ -21,24 +21,24 @@
 {
     width: 70%;
 
-&card-text
-{
-    color: black;
-}
+    &card-text
+    {
+        color: black;
+    }
 
-&card-img-top
-{
-    height: 300px;
-}
-&card-img-top img
-{
-    width: fit-content;
-}
-&card:hover
-{
-    transform: scale(1.10);
-    transition: 0.5s;
-}
+    &card-img-top
+    {
+        height: 300px;
+    }
+    &card-img-top img
+    {
+        width: fit-content;
+    }
+    &card:hover
+    {
+        transform: scale(1.10);
+        transition: 0.5s;
+    }
 }
 
 @media screen and (max-width: 768px)
@@ -60,7 +60,6 @@
     {
         margin: 10px;
     }
-    
 }
 .card-body
 {
